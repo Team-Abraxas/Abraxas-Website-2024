@@ -1,35 +1,106 @@
 // import GalleryCard from "./GalleryCard";
-import Coming from '../coming_soon/Coming';
+import Navbar from '../Navbar';
+import '../../styles/gallery/gallery.css'
+import GalleryCard from './GalleryCard';
+import { useState, useRef, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 const Gallery = () => {
 
+    const [isYear, setYear] = useState("2024");
+
+    const handle2024 = () => {
+        setYear("2024");
+        document.getElementsByClassName("year-selector24")[0].style.boxShadow = "2px 3px #fff";
+        document.getElementsByClassName("year-selector23")[0].style.boxShadow = "0px 0px";
+    }
+
+    const handle2023 = () => {
+        setYear("2023");
+        document.getElementsByClassName("year-selector23")[0].style.boxShadow = "2px 3px #fff";
+        document.getElementsByClassName("year-selector24")[0].style.boxShadow = "0px 0px";
+    }
+
+    const [width, setWidth] = useState(0);
+    const containerRef = useRef();
+    useEffect(() => {
+        setWidth(containerRef.current.scrollWidth - containerRef.current.offsetWidth);
+    }, []);
+
     return (
         <>
-            {/* <Background />
-            <div className='heading'>Gallery</div>
-            <ul className="gallery-grid">
-                <GalleryCard className="wide" src="https://images.unsplash.com/photo-1493807394496-2d6d8a70dc5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&w=400&h=400" alt="a" />
-                <GalleryCard className="tall" src="https://images.unsplash.com/photo-1568996550942-bff3caa44949?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&&w=400&h=800" alt="b" />
-                <GalleryCard className="wide" src="https://images.unsplash.com/photo-1484942835385-dcb3923c11e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&w=400&h=400" alt="e" />
-                <GalleryCard className="wide" src="https://images.unsplash.com/photo-1428364685224-aa2d596d2cf0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&w=400&h=400" alt="d" />
-                <GalleryCard className="tall" src="https://images.unsplash.com/photo-1586522471252-68f4b108ff2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&w=400&h=800" alt="e" />
-                <GalleryCard className="wide" src="https://images.unsplash.com/photo-1450791985525-55b3bc4aae7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&w=400&h=400" alt="f" />
-                <GalleryCard className="wide" src="https://images.unsplash.com/photo-1557478551-8d6953a259eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&w=400&h=400" alt="g" />
-                <GalleryCard className="tall" src="https://images.unsplash.com/photo-1587239101950-094ae8291a6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&w=400&h=800" alt="h" />
-                <GalleryCard className="wide" src="https://images.unsplash.com/photo-1464777649758-8747547e793f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&w=400&h=400" alt="i" />
-                <GalleryCard className="wide" src="https://images.unsplash.com/photo-1566525015882-701472b418fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&w=400&h=400" alt="j" />
-                <GalleryCard className="tall" src="https://images.unsplash.com/photo-1567242990285-991bb17127fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&w=400&h=800" alt="k" />
-                <GalleryCard className="wide" src="https://images.unsplash.com/photo-1515070902842-139c7f2ded6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&w=400&h=400" alt="l" />
-                <GalleryCard className="tall" src="https://images.unsplash.com/photo-1515749968044-d1d417bf629c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&w=400&h=800" alt="m" />
-                <GalleryCard className="wide" src="https://images.unsplash.com/photo-1552560671-4273e3f28e1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&w=400&h=400" alt="n" />
-                <GalleryCard src="https://images.unsplash.com/photo-1488573291274-023757f18884?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&w=400&h=400" alt="o" className="wide" />
-                <GalleryCard src="https://images.unsplash.com/photo-1577312891106-b39a179bfab6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&w=400&h=400" alt="p" className="wide" />
-                <GalleryCard src="https://images.unsplash.com/photo-1533227356842-2b94d2d24d8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&w=400&h=400" alt="q" className="wide" />
-                <GalleryCard src="https://images.unsplash.com/photo-1550786180-35a0aeba728b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&w=400&h=400" alt="r" className="tall" />
-                <GalleryCard src="https://images.unsplash.com/photo-1585436634834-dc83ead5f511?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&w=400&h=400" alt="s" className="tall" />
-                <GalleryCard src="https://images.unsplash.com/photo-1481897083252-7024610f34d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&w=400&h=400" alt="t" className="wide" />
-            </ul> */}
-            <Coming />
+
+            <div className="tempNav">
+                <Navbar />
+            </div>
+
+            <div className="year-selector">
+                <button className='year-selector24' onClick={handle2024}>2024</button>
+                <button className='year-selector23' onClick={handle2023}>2023</button>
+            </div>
+
+            <motion.div className="galleryContainer snaps-inline" ref={containerRef} drag="x" dragConstraints={{ right: 0, left: -2000 }}>
+                {isYear !== "2023" ? <>
+                    <div className="first-row">
+                        <GalleryCard identifier={1} />
+                        <GalleryCard identifier={2} />
+                        <GalleryCard identifier={3} width={"492.5"} />
+                        <GalleryCard identifier={4} />
+                        <GalleryCard identifier={5} />
+                        <GalleryCard identifier={6} />
+                        <GalleryCard identifier={7} />
+                        <GalleryCard identifier={8} />
+
+
+                    </div>
+                    <div className="second-row">
+                        <GalleryCard identifier={100} />
+                        <GalleryCard identifier={101} width={'630'} />
+                        <GalleryCard identifier={102} />
+                        <GalleryCard identifier={103} />
+                        <GalleryCard identifier={104} />
+                        <GalleryCard identifier={105} />
+                        <GalleryCard identifier={106} />
+                    </div>
+                    <div className="third-row">
+                        <GalleryCard identifier={201} width={"492.5"} />
+                        <GalleryCard identifier={202} />
+                        <GalleryCard identifier={203} />
+                        <GalleryCard identifier={204} />
+                        <GalleryCard identifier={205} />
+                        <GalleryCard identifier={206} />
+                        <GalleryCard identifier={207} />
+                        <GalleryCard identifier={208} />
+                    </div>
+                </>
+
+                    :
+
+                    <>
+                        <div className="first-row">
+                            <GalleryCard identifier={51} width={'630'} />
+                            <GalleryCard identifier={52} />
+                            <GalleryCard identifier={53} />
+                            <GalleryCard identifier={54} />
+                            <GalleryCard identifier={55} />
+                            <GalleryCard identifier={56} />
+                            <GalleryCard identifier={57} />
+                        </div>
+                        <div className="second-row">
+                            <GalleryCard identifier={150} />
+                            <GalleryCard identifier={151} />
+                            <GalleryCard identifier={152} />
+                            <GalleryCard identifier={153} />
+                        </div>
+                        <div className="third-row">
+                            <GalleryCard identifier={251} width={"492.5"} />
+                            <GalleryCard identifier={252} />
+                            <GalleryCard identifier={253} />
+                            <GalleryCard identifier={254} />
+                        </div>
+                    </>}
+            </motion.div>
+
         </>
 
     );
