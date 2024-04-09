@@ -9,9 +9,9 @@ const Coming = () => {
             <div className="tempNav">
                 <Navbar />
             </div>
-            <div className="soonHeroContainer">
+            {/* <div className="soonHeroContainer">
                 <h3 className="textsoon" style={{ backgroundImage: 'url(' + TextBackground + ')' }} ><div>Landing</div> <div>Soon</div></h3>
-            </div>
+            </div> */}
         </div>
     )
 }

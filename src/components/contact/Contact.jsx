@@ -5,7 +5,7 @@ import Navbar from '../Navbar';
 import Astronaut from '../../assets/images/contact/astronaut.png';
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere, MeshDistortMaterial } from '@react-three/drei';
-import { FaGithub, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaInstagram , FaLinkedin} from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -32,16 +32,16 @@ const Contact = () => {
             setLoading(true);
 
             emailjs.send(
-                'service_086sh5s',
-                'template_7tlyxu8',
+                'service_0avkiam',
+                'template_6jqzaku',
                 {
                     from_name: form.name,
-                    to_name: 'Adrin',
+                    to_name: 'Shabd',
                     from_email: form.email,
-                    to_email: "ashmitgupta.personal@gmail.com",
+                    to_email: "shabdpatel0@gmail.com",
                     message: form.message,
                 },
-                '48SVs8nNk257tJnWX'
+                'jgNva9KSbZIyMyVfb'
             )
                 .then(() => {
                     setLoading(false);
@@ -78,6 +78,7 @@ const Contact = () => {
                                     className='formControl'
                                     name='name'
                                     placeholder='Your Name'
+                                    required
                                     onChange={handleInputChange}
                                     value={form.name}
                                 />
@@ -86,6 +87,7 @@ const Contact = () => {
                                     className='formControl'
                                     name='email'
                                     placeholder='Your Email'
+                                    required
                                     onChange={handleInputChange}
                                     value={form.email}
                                 />
@@ -94,6 +96,7 @@ const Contact = () => {
                                     className='formControl'
                                     name='message'
                                     placeholder='Your Message'
+                                    required
                                     onChange={handleInputChange}
                                     value={form.message}
                                 />
@@ -105,6 +108,7 @@ const Contact = () => {
                             </form>
                             <div className="socials">
                                 <a href='https://github.com/Team-Abraxas' target='blank'><FaGithub className='socialIcon' /></a>
+                                <a href='https://www.linkedin.com/company/abraxas-nith/mycompany/' target='blank'><FaLinkedin className='socialIcon' /></a>
                                 <a href="https://instagram.com/team_abraxas?igshid=YmMyMTA2M2Y=" target='blank'><FaInstagram className='socialIcon' /></a>
                             </div>
                         </div>

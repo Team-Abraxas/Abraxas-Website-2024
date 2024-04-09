@@ -1,4 +1,4 @@
-/* :root {
+:root {
     box-sizing: border-box;
   }
  *::before,
@@ -15,9 +15,9 @@
     font-size: 1.6rem;
     line-height: 1.6;
     margin:0;
-  } */
-
-/* ul,
+  }
+  
+  ul,
   li {
     list-style: none;
   }
@@ -57,160 +57,4 @@
   
   .tall {
     grid-row: span 2;
-  } 
-   */
-
-/* ------------Gallery CSS--------------*/
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-#card-container {
-  height: 170px;
-  width: 275px;
-  /* margin-top: 3rem; */
-  /* margin-left: auto;
-  margin-right: auto; */
-  padding: 0px;
-  flex-shrink: 0;
-}
-
-.galleryContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  flex-wrap: nowrap;
-  flex: none;
-  margin-left: 4rem;
-  margin-top: 2rem;
-  /* overflow-x: scroll;
-  overflow-y: auto;
-  overscroll-behavior-inline: contain; */
-}
-
-.year-selector {
-  display: flex;
-  justify-content: space-evenly;
-  /* gap: 20rem; */
-  /* margin-top: 3%; */
-  font-size: 1.5rem;
-}
-
-.first-row {
-  display: flex;
-  gap: 80px;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-}
-
-.second-row {
-  display: flex;
-  gap: 80px;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-}
-
-.third-row {
-  display: flex;
-  gap: 80px;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-}
-
-.firstImg {
-  height: 170px;
-  width: 275px;
-  background-color: aqua;
-  position: absolute;
-  z-index: 100;
-  margin-left: 0;
-}
-
-.midImg {
-  height: 170px;
-  width: 275px;
-  background-color: rebeccapurple;
-  position: absolute;
-  margin-left: 2rem;
-  z-index: 50;
-}
-
-.lastImg {
-  height: 170px;
-  width: 275px;
-  background-color: gold;
-  position: absolute;
-  margin-left: 4rem;
-  z-index: 10;
-}
-
-.tr {
-  transition-timing-function: cubic-bezier(0.3, 0.1, 0.1, 1);
-  transition: all 0.4s ease-in-out;
-  overflow: hidden;
-}
-
-.child-1 {
-  transform: translateX(5rem) scale(0.94);
-  z-index: 10000;
-}
-
-.child-2 {
-  transform: translateX(7rem) scale(0.94);
-  z-index: 9000;
-}
-
-.child-3 {
-  transform: translateX(9rem) scale(0.94);
-  z-index: 8000;
-}
-
-.year-selector23 {
-  margin-left: 5%;
-  margin-bottom: 2%;
-  margin-top: 2%;
-  background: transparent;
-  color: white;
-  font-size: 1.25rem;
-  width: auto;
-  border: none;
-  padding-right: 2px
-}
-
-.year-selector24 {
-  margin-left: 5%;
-  margin-bottom: 2%;
-  margin-top: 2%;
-  background: transparent;
-  color: white;
-  font-size: 1.25rem;
-  width: auto;
-  border: none;
-  padding-right: 2px;
-}
-
-@media screen and (max-width: 768px) {
-  .year-selector {
-    margin-top: 7rem;
-    overflow-x: hidden;
-  }
-  .galleryContainer {
-    margin-top: 7rem;
-    margin-left: 1rem;
-    overflow-x: scroll;
-  }
-  .tempNav {
-   overflow-x: hidden;
-  }
-
-}
-
-/* @media screen and (min-width: 1024px) {
-  .row {
-    gap: 40px;
-  }
-}
- */
+  }  

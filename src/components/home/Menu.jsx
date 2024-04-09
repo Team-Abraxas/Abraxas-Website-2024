@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import Atom from './Atom.jsx'
 import '../../styles/home/menu.css'
 import { Link } from 'react-router-dom';
@@ -17,38 +17,38 @@ const Menu = () => {
   return (
     <div className='container'>
       {/* <div className="heroTitle">Find Your Possibilities</div> */}
-      <div className="img">
-        <div className="menu-icons">
-          <div className="icons" style={{ '--i': 1 }} onMouseOver={() => setHoveredTitle("Home")} onMouseOut={() => setHoveredTitle("Find your Possibilities")}>
-            <Link to="/"><img className='moon-icons' src={MoonPhase1} alt="" width='70px' height='70px' /></Link>
+        <div className="img">
+          <div className="menu-icons">
+            <div className="icons" style={{'--i': 1}} onMouseOver={()=>setHoveredTitle("Home")} onMouseOut={()=>setHoveredTitle("Find your Possibilities")}>
+              <Link to="/"><img className='moon-icons' src={MoonPhase1} alt="" width='70px' height='70px' /></Link>
+            </div>
+            <div className="icons" style={{'--i': 2}} onMouseOver={()=>setHoveredTitle("Who We are?")} onMouseOut={()=>setHoveredTitle("Find your Possibilities")}>
+              <Link to="/about"><img className='moon-icons' src={MoonPhase2} alt="" width='70px' height='70px' /></Link>
+            </div>
+            <div className="icons" style={{'--i': 3}} onMouseOver={()=>setHoveredTitle("Our Projects")} onMouseOut={()=>setHoveredTitle("Find your Possibilities")}>
+              <Link to="/projects"><img className='moon-icons' src={MoonPhase3} alt="" width='70px' height='70px' /></Link>
+            </div>
+            <div className="icons" style={{'--i': 4}} onMouseOver={()=>setHoveredTitle("Our Events")} onMouseOut={()=>setHoveredTitle("Find your Possibilities")}>
+              <Link to="/events"><img className='moon-icons' src={MoonPhase4} alt="" width='70px' height='70px' /></Link>
+            </div>
+            <div className="icons" style={{'--i': 5}} onMouseOver={()=>setHoveredTitle("Our Timeline")} onMouseOut={()=>setHoveredTitle("Find your Possibilities")}>
+              <Link to="/timeline"><img className='moon-icons' src={MoonPhase5} alt="" width='70px' height='70px' /></Link>
+            </div>
+            <div className="icons" style={{'--i': 6}} onMouseOver={()=>setHoveredTitle("Our Team")} onMouseOut={()=>setHoveredTitle("Find your Possibilities")}>
+              <Link to="/team"><img className='moon-icons' src={MoonPhase6} alt="" width='70px' height='70px' /></Link>
+            </div>
+            <div className="icons" style={{'--i': 7}} onMouseOver={()=>setHoveredTitle("Watch Us")} onMouseOut={()=>setHoveredTitle("Find your Possibilities")}>
+              <Link to="/gallery"><img className='moon-icons' src={MoonPhase7} alt="" width='70px' height='70px' /></Link>
+            </div>
+            <div className="icons" style={{'--i': 8}} onMouseOver={()=>setHoveredTitle("Talk to Us")} onMouseOut={()=>setHoveredTitle("Find your Possibilities")}>
+              <Link to="/contact"><img className='moon-icons' src={MoonPhase8} alt="" width='70px' height='70px' /></Link>
+            </div>
           </div>
-          <div className="icons" style={{ '--i': 2 }} onMouseOver={() => setHoveredTitle("Who We are?")} onMouseOut={() => setHoveredTitle("Find your Possibilities")}>
-            <Link to="/about"><img className='moon-icons' src={MoonPhase2} alt="" width='70px' height='70px' /></Link>
-          </div>
-          <div className="icons" style={{ '--i': 3 }} onMouseOver={() => setHoveredTitle("Our Projects")} onMouseOut={() => setHoveredTitle("Find your Possibilities")}>
-            <Link to="/projects"><img className='moon-icons' src={MoonPhase3} alt="" width='70px' height='70px' /></Link>
-          </div>
-          <div className="icons" style={{ '--i': 4 }} onMouseOver={() => setHoveredTitle("Our Events")} onMouseOut={() => setHoveredTitle("Find your Possibilities")}>
-            <Link to="/events"><img className='moon-icons' src={MoonPhase4} alt="" width='70px' height='70px' /></Link>
-          </div>
-          <div className="icons" style={{ '--i': 5 }} onMouseOver={() => setHoveredTitle("Our Timeline")} onMouseOut={() => setHoveredTitle("Find your Possibilities")}>
-            <Link to="/timeline"><img className='moon-icons' src={MoonPhase5} alt="" width='70px' height='70px' /></Link>
-          </div>
-          <div className="icons" style={{ '--i': 6 }} onMouseOver={() => setHoveredTitle("Our Team")} onMouseOut={() => setHoveredTitle("Find your Possibilities")}>
-            <Link to="/team"><img className='moon-icons' src={MoonPhase6} alt="" width='70px' height='70px' /></Link>
-          </div>
-          <div className="icons" style={{ '--i': 7 }} onMouseOver={() => setHoveredTitle("Watch Us")} onMouseOut={() => setHoveredTitle("Find your Possibilities")}>
-            <Link to="/gallery"><img className='moon-icons' src={MoonPhase7} alt="" width='70px' height='70px' /></Link>
-          </div>
-          <div className="icons" style={{ '--i': 8 }} onMouseOver={() => setHoveredTitle("Talk to Us")} onMouseOut={() => setHoveredTitle("Find your Possibilities")}>
-            <Link to="/contact"><img className='moon-icons' src={MoonPhase8} alt="" width='70px' height='70px' /></Link>
+          <div className="atom-icon">
+            <Atom/>
           </div>
         </div>
-        <div className="atom-icon">
-          <Atom />
-        </div>
-      </div>
-      <div className='hoveredTitle'>{hoveredTitle}</div>
+        <div className='hoveredTitle'>{hoveredTitle}</div>
     </div>
   )
 }

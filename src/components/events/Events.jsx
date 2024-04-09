@@ -40,7 +40,7 @@ const Events = () => {
                     <div className="wrap animate pop">
                         <div className="overlay">
                             <div className="overlay-content animate slide-left delay-2">
-                                <h1 className="animate slide-left pop delay-4">Locked In Time</h1>
+                                {/* <h1 className="animate slide-left pop delay-4">Locked In Time</h1> */}
                                 <p className="animate slide-left pop delay-5" style={myStyle}></p>
                             </div>
                             <div className="image-content1 animate slide delay-5"></div>
@@ -60,7 +60,7 @@ const Events = () => {
                     <div className="wrap animate pop">
                         <div className="overlay">
                             <div className="overlay-content animate slide-left delay-2">
-                                <h1 className="animate slide-left pop delay-4">Photon Quest</h1>
+                                {/* <h1 className="animate slide-left pop delay-4">Photon Quest</h1> */}
                             </div>
                             <div className="image-content2 animate slide delay-5"></div>
                             {/* <div className="dotsEvent animate">
@@ -82,7 +82,7 @@ const Events = () => {
                     <><div className="wrap animate pop">
                         <div className="overlay">
                             <div className="overlay-content animate slide-left delay-2">
-                                <h1 className="animate slide-left pop delay-4">Telescope</h1>
+                                {/* <h1 className="animate slide-left pop delay-4">Telescope</h1> */}
 
                             </div>
                             <div className="image-content3 animate slide delay-5"></div>
@@ -112,7 +112,7 @@ const Events = () => {
                         <div className="wrap animate pop">
                             <div className="overlay">
                                 <div className="overlay-content animate slide-left delay-2">
-                                    <h1 className="animate slide-left pop delay-4">Quantum Computing</h1>
+                                    {/* <h1 className="animate slide-left pop delay-4">Quantum Computing</h1> */}
 
                                 </div>
                                 <div className="image-content4 animate slide delay-5"></div>

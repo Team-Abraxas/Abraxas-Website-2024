@@ -97,14 +97,22 @@
   font-family: 'Exo 2', sans-serif;
   font-size: 18px;
   height: 48px;
-  background-color: white;
+  /* background-color: white; */
   margin: 32px;
+  border: 1px solid #a39eeb;
+  background: #000000;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s ease-in-out;
 }
 
 .submitBtn:hover {
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  color: white;
-  background: transparent;
+  cursor: pointer;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(107, 126, 212, 0.767);
+    color: #000000;
 }
 
 .socials {
