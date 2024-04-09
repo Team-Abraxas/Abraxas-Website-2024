@@ -23,7 +23,7 @@ const IONICWIND = ({ isMobile }) => {
         object={ionicwind.scene}
         scale={isMobile ? 0.012 : 0.012}
         position={[0, 2, -0.5]}  //{...isMobile ? [0, -1, -2] : [-0.01, 0, -0.1]}
-        rotation={[0, 0, 2*Math.PI]}
+        rotation={[0, 0, 2 * Math.PI]}
 
       />
     </mesh>
