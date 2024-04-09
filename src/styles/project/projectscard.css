@@ -1,0 +1,168 @@
+/* .innerprojectcard{
+    display: flex;
+    border-radius: 4px;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.projectcard{
+    cursor: grab;
+    overflow: hidden;
+}
+
+.modal{
+    padding:10px;
+    margin: 10px;
+    pointer-events: none;
+} */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.projectcard {
+    /* margin: 5px;
+    padding: 5px; */
+    margin-left: 30px;
+}
+
+.innerprojectcard {
+    display: flex;
+
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.projectdetail {
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    /* border: 5px double rgb(216, 231, 216); */
+    /* background-color: rgba(0, 0, 0, 0.5); Transparent white background */
+    border-radius: 10px;
+    /* box-shadow: 4px 4px 8px 8px rgba(128, 137, 177, 0.767); Shadow for depth */
+    padding: 20px;
+    margin: 20px;
+    padding-bottom: 0px;
+    margin-left: 80px;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #afafaf;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.projectdetail:hover {
+    transform: translateY(-15px);
+    /* Move card slightly up on hover */
+    /* border: 4px solid rgba(19, 77, 201, 0.596); */
+    /* box-shadow: 4px 4px 8px 8px rgba(214, 22, 22, 0.767);  */
+}
+
+.projectimage {
+    text-align: center;
+    border-bottom: 5px double #363131;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 300px;
+    height: 250px;
+}
+
+.projectname {
+
+    font-weight: 700;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.projectdescription {
+
+    font-size: medium;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+}
+
+.projectbutton {
+    border: 2px solid #fff;
+    background: #000000;
+    color: #fff;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.projectbutton:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(107, 126, 212, 0.767);
+    color: #000000;
+}
+
+
+.year-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.year-selector24 {
+    border: 1px solid #a39eeb;
+    background: #000000;
+    color: #fff;
+    padding: 7px;
+    margin: 2px;
+    border-radius: 4px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s ease-in-out;
+    width: 70px;
+    height: 50px;
+    margin-right: 35px;
+}
+
+.year-selector24:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(107, 126, 212, 0.767);
+    color: #000000;
+}
+
+.year-selector23 {
+    border: 1px solid #a39eeb;
+    background: #000000;
+    color: #fff;
+    padding: 7px;
+    margin: 2px;
+    border-radius: 4px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s ease-in-out;
+    width: 70px;
+    height: 50px;
+}
+
+.year-selector23:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(107, 126, 212, 0.767);
+    color: #000000;
+}
+
+.h2modal{
+    font-weight: 900;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pmodal{
+    font-weight: 300;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}

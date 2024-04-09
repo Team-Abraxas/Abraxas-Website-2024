@@ -2,10 +2,6 @@ import React, { Component } from 'react'
 import '../../styles/timeline/timeline.css'
 import background from "../../assets/images/timeline/textBack.png";
 import Navbar from '../Navbar';
-import t_jan from "../../assets/timeline_jan.json";
-import t_feb from "../../assets/timeline_feb.json";
-import t_march from "../../assets/timline_march.json";
-import t_april from "../../assets/timeline_april.json"
 
 class Timeline extends Component {
     componentDidMount() {
@@ -27,19 +23,18 @@ class Timeline extends Component {
                     <h3 className="h3" style={{ backgroundImage: 'url(' + background + ')' }} >TimeLine</h3>
                     <div className="roadmap-container">
                         <div className="container-1">
-                            <div className="headline">January 2024</div>
+                            <div className="headline">January 2023</div>
                             <div className="content">
                                 <ul className="timeline-list">
-                                    {
-                                        t_jan.map((t_value) => {
-                                            return (
-                                                <li className="timeline-list-text">
-                                                    <div className="dots"></div>
-                                                    <div className="text"><b>{t_value.date}</b><p className="innerText" dangerouslySetInnerHTML={{ __html: t_value.event }} /></div>
-                                                </li>
-                                            )
-                                        })
-                                    }
+                                    <li className="timeline-list-text">
+                                        <div className="dots"></div>
+                                        <div className="text"><b>18</b>: Orientation & Club Launch</div>
+                                    </li>
+
+                                    <li className="timeline-list-text">
+                                        <div className="dots"></div>
+                                        <div className="text"><b>28</b>: Covered the Green Comet C/2022 E3 (ZFT)</div>
+                                    </li>
                                 </ul>
                             </div>
 
@@ -53,21 +48,19 @@ class Timeline extends Component {
                         </div>
 
                         <div className="container-2">
-                            <div className="headline">February 2024</div>
+                            <div className="headline">February 2023</div>
                             <div className="content">
                                 <ul className="timeline-list">
-                                    {
-                                        t_feb.map((t_value) => {
-                                            return (
-                                                <>
-                                                    <li className="timeline-list-text">
-                                                        <div className="dots"></div>
-                                                        <div className="text"><b>{t_value.date}</b><p className="innerText" dangerouslySetInnerHTML={{ __html: t_value.event }} /></div>
-                                                    </li>
-                                                </>
-                                            )
-                                        })
-                                    }
+                                    <li className="timeline-list-text">
+                                        <div className="dots"></div>
+                                        <div className="text"><b>03</b>: Quantum Computing Workshop</div>
+                                    </li>
+
+
+                                    <li className="timeline-list-text">
+                                        <div className="dots"></div>
+                                        <div className="text"><b>12</b>: Innovision</div>
+                                    </li>
 
                                 </ul>
                             </div>
@@ -82,21 +75,13 @@ class Timeline extends Component {
                         </div>
 
                         <div className="container-2">
-                            <div className="headline">March 2024</div>
+                            <div className="headline">March 2023</div>
                             <div className="content">
                                 <ul className="timeline-list">
-                                    {
-                                        t_march.map((t_value) => {
-                                            return (
-                                                <>
-                                                    <li className="timeline-list-text">
-                                                        <div className="dots"></div>
-                                                        <div className="text"><b>{t_value.date}</b><p className="innerText" dangerouslySetInnerHTML={{ __html: t_value.event }} /></div>
-                                                    </li>
-                                                </>
-                                            )
-                                        })
-                                    }
+                                    <li className="timeline-list-text">
+                                        <div className="dots"></div>
+                                        <div className="text"><b>13</b>: Looking Through The Telescope</div>
+                                    </li>
 
                                 </ul>
                             </div>
@@ -111,22 +96,30 @@ class Timeline extends Component {
                         </div>
 
                         <div className="container-2">
-                            <div className="headline">April 2024</div>
+                            <div className="headline">April 2023</div>
                             <div className="content">
                                 <ul className="timeline-list">
 
-                                    {
-                                        t_april.map((t_value) => {
-                                            return (
-                                                <>
-                                                    <li className="timeline-list-text">
-                                                        <div className="dots"></div>
-                                                        <div className="text"><b>{t_value.date}</b><p className="innerText" dangerouslySetInnerHTML={{ __html: t_value.event }} /></div>
-                                                    </li>
-                                                </>
-                                            )
-                                        })
-                                    }
+                                    <li className="timeline-list-text">
+                                        <div className="dots"></div>
+                                        <div className="text"><b>15</b>: Ascensio: The Transcending The Archaic (Day 1)</div>
+                                    </li>
+
+                                    <li className="timeline-list-text">
+                                        <div className="dots"></div>
+                                        <div className="text"><b>15</b>: Locked In Time</div>
+                                    </li>
+
+                                    <li className="timeline-list-text">
+                                        <div className="dots"></div>
+                                        <div className="text"><b>15</b>: Ascensio: The Transcending The Archaic (Day 2)</div>
+                                    </li>
+
+                                    <li className="timeline-list-text">
+                                        <div className="dots"></div>
+                                        <div className="text"><b>16</b>: Photon Quest</div>
+                                    </li>
+
                                 </ul>
                             </div>
 

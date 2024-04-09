@@ -2,6 +2,7 @@ import React from 'react'
 import '../../styles/about/about.css';
 import RoverCanvas from './Rover';
 import Navbar from '../Navbar';
+// import Ionicthruster from '../projects/ionicthruster';
 
 const About = () => {
   
@@ -11,6 +12,7 @@ const About = () => {
       <div className="aboutHeroContainer">
         <div className='aboutLeft'>
                 <RoverCanvas />
+                {/* <Ionicthruster/> */}
         </div>
         <div className="aboutRight">
             <div className="aboutTitle">Who we Are</div>

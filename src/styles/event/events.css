@@ -1,12 +1,16 @@
 .eventPageTitle {
-    font-size: 2rem;
-    /* text-align: center; */
-    background: transparent;
-    color: white;
-    width: auto;
-    border: none;
-    padding-right: 1%;
-    box-shadow: rgb(255, 255, 255) 2px 3px;
+    border: 1px solid #a39eeb;
+    background: #000000;
+    color: #fff;
+    padding: 7px;
+    margin: 2px;
+    border-radius: 4px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s ease-in-out;
+    width: 150px;
+    height: 50px;
+    margin-right: 35px;
 }
 
 .tempNav {
@@ -15,6 +19,9 @@
 
 .eventPageTitle:hover {
     cursor: pointer;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(107, 126, 212, 0.767);
+    color: #000000;
 }
 
 h1.animate {
@@ -82,7 +89,7 @@ p {
     right: 0;
     width: 60vmin;
     height: 100%;
-    background-image: url("../../assets/images/events/lockedInTime.jpeg");
+    background-image: url("../../assets/images/events/physicscarnival.jpg");
     background-size: cover;
     transition: .3s ease-in-out;
     /* border: 1px solid green; */
@@ -94,7 +101,7 @@ p {
     right: 0;
     width: 60vmin;
     height: 100%;
-    background-image: url("../../assets/images/events/photon_quest.png");
+    background-image: url("../../assets/images/events/ESCAPE\ ROOM\ FINAL\ PSD.png");
     background-size: cover;
     transition: .3s ease-in-out;
     /* border: 1px solid green; */
@@ -106,7 +113,7 @@ p {
     right: 0;
     width: 60vmin;
     height: 100%;
-    background-image: url("../../assets/images/events/telescope.webp");
+    background-image: url("../../assets/images/events/3d\ printing.jpg");
     background-size: cover;
     transition: .3s ease-in-out;
     /* border: 1px solid green; */
@@ -118,7 +125,7 @@ p {
     right: 0;
     width: 60vmin;
     height: 100%;
-    background-image: url("../../assets/images/events/quantum.webp");
+    background-image: url("../../assets/images/events/Guest\ lecture.jpg");
     background-size: cover;
     transition: .3s ease-in-out;
     /* border: 1px solid green; */
@@ -171,17 +178,25 @@ p {
 }
 
 .evtBtn {
-    margin-left: 5%;
-    background: transparent;
-    color: white;
-    font-size: 2rem;
-    width: auto;
-    border: none;
-    padding-right: 2px;
+    border: 1px solid #a39eeb;
+    background: #000000;
+    color: #fff;
+    padding: 7px;
+    margin: 2px;
+    border-radius: 4px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s ease-in-out;
+    width: 150px;
+    height: 50px;
+    margin-right: 35px;
 }
 
 .evtBtn:hover {
     cursor: pointer;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(107, 126, 212, 0.767);
+    color: #000000;
 }
 
 .wrap:hover .overlay {
@@ -227,6 +242,7 @@ p {
         opacity: 0;
         transform: scale(0.5, 0.5);
     }
+
     100% {
         opacity: 1;
         transform: scale(1, 1);
@@ -245,6 +261,7 @@ p {
         opacity: 0;
         transform: translate(4em, 0);
     }
+
     100% {
         opacity: 1;
         transform: translate(0, 0);
@@ -263,6 +280,7 @@ p {
         opacity: 0;
         transform: translate(-40px, 0);
     }
+
     100% {
         opacity: 1;
         transform: translate(0, 0);
@@ -278,6 +296,7 @@ p {
         opacity: 0;
         transform: translateY(3em);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -320,15 +339,19 @@ p {
     .eventsCard {
         flex-direction: column;
     }
+
     .workShop {
         margin-top: 80px;
     }
+
     .evtBtn {
         font-size: 1rem;
     }
+
     .eventPageTitle {
         font-size: 1rem;
     }
+
     h1.animate {
         font-size: 1.3rem;
     }
