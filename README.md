@@ -1,4 +1,4 @@
-This is the official website of Team ABRAXAS for NIMBUS 2023.
+This is the official website of Team ABRAXAS for NIMBUS 2024.
 
 The website is live at [https://abraxas-2023.vercel.app/](https://abraxas-2023.vercel.app/).
 
