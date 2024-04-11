@@ -89,7 +89,7 @@ p {
     right: 0;
     width: 60vmin;
     height: 100%;
-    background-image: url("../../assets/images/events/physicscarnival.jpg");
+    background-image: url("../../assets/images/events/physics_carnival.jpg");
     background-size: cover;
     transition: .3s ease-in-out;
     /* border: 1px solid green; */
@@ -101,7 +101,7 @@ p {
     right: 0;
     width: 60vmin;
     height: 100%;
-    background-image: url("../../assets/images/events/ESCAPE\ ROOM\ FINAL\ PSD.png");
+    background-image: url("../../assets/images/events/escape_room.png");
     background-size: cover;
     transition: .3s ease-in-out;
     /* border: 1px solid green; */
@@ -113,7 +113,7 @@ p {
     right: 0;
     width: 60vmin;
     height: 100%;
-    background-image: url("../../assets/images/events/3d\ printing.jpg");
+    background-image: url("../../assets/images/events/3d_printing.jpg");
     background-size: cover;
     transition: .3s ease-in-out;
     /* border: 1px solid green; */
@@ -125,7 +125,7 @@ p {
     right: 0;
     width: 60vmin;
     height: 100%;
-    background-image: url("../../assets/images/events/Guest\ lecture.jpg");
+    background-image: url("../../assets/images/events/guest_lecture_ranjan_chopra.jpg");
     background-size: cover;
     transition: .3s ease-in-out;
     /* border: 1px solid green; */
