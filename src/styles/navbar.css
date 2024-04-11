@@ -106,7 +106,7 @@
 
 .navbar {
     width: 80vw;
-    background : transparent;
+    background: transparent;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -123,7 +123,8 @@
     margin: 0 1vw;
 }
 
-.menuIcon, .menuCross {
+.menuIcon,
+.menuCross {
     display: none;
 }
 
@@ -151,6 +152,8 @@
         position: absolute;
         right: 10px;
         top: 10px;
+        height: 10vh;
+        width: 10vh;
     }
 
     .navbar {
@@ -176,7 +179,7 @@
 
         display: none;
     }
-    
+
     .list {
         display: flex;
         flex-direction: column;
