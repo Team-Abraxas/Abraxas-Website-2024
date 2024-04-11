@@ -81,7 +81,7 @@
 
 .card:hover .name_title {
     /* transform: translate3d(0%, -50px, 100px); */
-    transform: scale(0.5);
+    transform: scale(2);
 }
 
 .card:hover .cover-image {
@@ -110,7 +110,7 @@
 
 .card:hover .name_title {
     /* transform: translate3d(0%, -50px, 100px); */
-    transform: scale(0.8);
+    transform: scale(2);
 }
 
 .carousel {
@@ -144,11 +144,10 @@
 }
 
 @media only screen and (max-width: 768px) {
-    :root {
+     :root {
         --card-height: 250px;
         --card-width: calc(var(--card-height) / 1.5);
     }
-
     .yearTitle {
         font-size: 32px;
     }

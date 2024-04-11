@@ -54,7 +54,8 @@ const Carousel = (props) => {
                                     </div>
 
                                     <img src={member.foreground} alt={member.name} className="character" />
-                                    <div ><img src={member.title} alt={member.name} className="name_title" /></div>
+                                    {/* <div ><img src={member.title} alt={member.name} className="name_title" /></div> */}
+                                    <div><h3 className='name_title'>{member.name}</h3></div>
                                     <div className='socialMediaIcons'>
                                         <div className='icon1'>{(member.github) ? <a href={member.github} rel="noreferrer" target="_blank"><BsGithub /></a> : <></>}</div>
                                         <div className='icon2'>{(member.linkedin) ? <a href={member.linkedin} rel="noreferrer" target="_blank"><AiOutlineLinkedin /></a> : <></>}</div>
