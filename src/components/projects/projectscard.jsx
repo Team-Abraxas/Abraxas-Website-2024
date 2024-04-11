@@ -178,7 +178,7 @@ const data2023 = [
   },
   {
     name: `Quantum Breakout`,
-    image: <Soniclevitation />,
+    image: <img src="https://res.cloudinary.com/dyq1mioyr/image/upload/v1712836790/Batch2024/Screenshot_from_2024-04-11_17-29-30_w1cths.png" style={{ width: '300px', borderRadius: '10px' }} />,
     description: `Designed a quantum Breakout game to teach school students Qubit Manipulation using Quantum Gates. It offers an interactive platform for learning complex concepts in a fun and engaging way.`,
     descriptions: `We've developed a quantum version of the classic Breakout game tailored for school students to grasp qubit manipulation through various quantum gates. This educational tool merges entertainment with learning, allowing students to interactively explore the intricate world of quantum mechanics. By maneuvering through the game's challenges, players gain practical insights into how quantum gates influence qubit states, paving the way for a deeper understanding of quantum computing principles. The game's intuitive interface and engaging gameplay make it an effective supplement to traditional classroom teachings, offering students a dynamic way to visualize abstract concepts. As they progress through levels, players encounter different quantum gates, each presenting unique challenges and learning opportunities. This innovative approach to education harnesses the power of gamification to make quantum concepts accessible and enjoyable, empowering students to become proficient in quantum computing fundamentals.`
   },
@@ -208,7 +208,7 @@ const data2024 = [
   },
   {
     name: `QRNG`,
-    image: `../../ assets / images / project / qrng.png`,
+    image: <img src="https://res.cloudinary.com/dyq1mioyr/image/upload/v1712835814/Batch2024/images_djnjn3.jpg" style={{ borderRadius: '10px' }} />,
     description: `Quantum Binary Number Generator: Revolutionizing security with quantum mechanics. Join us in bridging theory with implementation, unlocking new frontiers in computational unpredictability and cryptographic security.`,
     descriptions: `This project pioneers quantum mechanics principles in the development of a Binary Number Generator to redefine random number generation. Exploiting quantum superposition, it aims to surpass classical pseudorandom number generators, ensuring genuinely random outputs. Using quantum bits (qubits) and their simultaneous state existence, it introduces unparalleled unpredictability. The focus is on creating a robust system for cryptography, secure communications, and Quantum Key Distribution (QKD) systems, ensuring unbreakable cryptographic security. Managing quantum noise is crucial for reliability and quality. The goal is to build a prototype integrating quantum mechanics theory with practical implementation. Beyond cryptography, it promises to advance quantum computing and understanding of quantum principles. This initiative represents a significant leap towards realizing quantum-powered randomness, unlocking new frontiers in secure communication and computational unpredictability.`
   },
@@ -221,7 +221,7 @@ const data2024 = [
 
   {
     name: `Plant Disease Detector`,
-    image: `/Ion-Thruster-Full-Diagram.jpg`,
+    image: <img src="https://res.cloudinary.com/dyq1mioyr/image/upload/v1712836309/Batch2024/images_eilvlr.jpg" style={{ borderRadius: '10px', marginTop: '1rem' }} />,
     description: `Revolutionizing farming, our tool utilizes machine learning and Python to swiftly identify plant diseases, ensuring healthier yields and sustainable agriculture. Experience the future of crop management with our innovative solution.`,
     descriptions: `Our plant disease detector harnesses the power of machine learning, Python, and image recognition to swiftly identify diseases in plant leaves. This innovative tool aids farmers in early intervention and crop protection, promoting sustainable farming practices by reducing pesticide usage and improving yield quality. Empowering farmers with real-time, accurate diagnoses, it revolutionizes crop management, fostering healthier harvests and economic stability. Seamlessly integrating into existing workflows, our solution represents a pivotal advancement in agricultural technology, bridging the gap between traditional farming and the digital era. Join us in shaping the future of agriculture with cutting-edge innovation and sustainable practices.`
   },
@@ -236,13 +236,13 @@ const data2024 = [
   },
   {
     name: `Radiation Sensor`,
-    image: `/Ion-Thruster-Full-Diagram.jpg`,
+    image: <img src="https://res.cloudinary.com/dyq1mioyr/image/upload/v1712836492/Batch2024/images_rpmmmv.jpg" style={{ width: '300px', borderRadius: '10px' }} />,
     description: `Deploying Geiger-Müller tubes and advanced signal processing for ongoing monitoring. Dependable, wireless, and alert-ready, it ensures unmatched radiation detection across diverse environments.`,
     descriptions: `The IoT-based Radiation Monitoring System employs fixed detectors with Geiger-Müller tubes to monitor gamma and neutron radiation levels continuously. These detectors convert radiation signals into analog pulses, amplified and processed into square waves for analysis. Managed by microcontrollers like Arduino, data is transmitted to a central gateway facilitating communication with servers. Supplementary sensors provide contextual data, enhancing analysis. Servers consolidate and analyze data, enabling real-time monitoring and response to radiation incidents. This comprehensive approach ensures continuous and reliable radiation surveillance, vital for safety in diverse environments.`
   },
   {
     name: `Quantum hunt`,
-    image: `/ Ion - Thruster - Full - Diagram.jpg`,
+    image: <img src="https://res.cloudinary.com/dyq1mioyr/image/upload/v1712836619/Batch2024/images_jgwgbg.png" style={{ width: '300px', borderRadius: '10px' }} />,
     description: `Experience the efficiency of quantum computing through a treasure hunt game featuring Grover's algorithm. This interactive tool not only entertains but also educates, offering insights into quantum algorithms. `,
     descriptions: `In our treasure hunt game, players delve into the realm of quantum computing, wielding Grover's algorithm to efficiently search for hidden treasures. Through engaging gameplay, participants witness firsthand the remarkable capabilities of quantum algorithms in solving complex search problems exponentially faster than classical counterparts. As players navigate through the game, they encounter scenarios where quantum principles guide them to success, fostering a deeper understanding of quantum computation. Beyond entertainment, the game serves as an educational tool, bridging the gap between theory and practice by offering tangible experiences with quantum algorithms. By gamifying quantum concepts, we aim to make learning engaging and accessible, inspiring the next generation of innovators to explore the frontiers of quantum computing. Get ready to embark on an adventure where quantum exploration unlocks treasures of knowledge and discovery.`
   },

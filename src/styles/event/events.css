@@ -173,8 +173,11 @@ p {
 .workShop {
     display: flex;
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    /* align-items: center; */
 }
 
 .evtBtn {
