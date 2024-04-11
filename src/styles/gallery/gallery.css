@@ -69,7 +69,7 @@
 }
 
 #card-container {
-  height: 170px;
+  height: 275px;
   width: 275px;
   /* margin-top: 3rem; */
   /* margin-left: auto;
@@ -85,7 +85,8 @@
   flex-wrap: nowrap;
   flex: none;
   margin-left: 4rem;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
+  margin-right: 4rem;
   /* overflow-x: scroll;
   overflow-y: auto;
   overscroll-behavior-inline: contain; */
@@ -97,49 +98,57 @@
   /* gap: 20rem; */
   /* margin-top: 3%; */
   font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
 .first-row {
   display: flex;
-  gap: 80px;
+  gap: 45px;
   flex-wrap: nowrap;
-  overflow-x: auto;
+  /* overflow-x: auto; */
 }
 
 .second-row {
   display: flex;
-  gap: 80px;
+  gap: 45px;
   flex-wrap: nowrap;
-  overflow-x: auto;
+  /* overflow-x: auto; */
 }
 
 .third-row {
   display: flex;
   gap: 80px;
   flex-wrap: nowrap;
-  overflow-x: auto;
+  /* overflow-x: auto; */
 }
 
 .firstImg {
-  height: 170px;
+  height: 275px;
   width: 275px;
-  background-color: aqua;
+  /* background-color: aqua; */
   position: absolute;
   z-index: 100;
+  border-radius: 10px;
   margin-left: 0;
+}
+img {
+  height: 100%;
+  width: 100%;
 }
 
 .midImg {
-  height: 170px;
+  height: 275px;
   width: 275px;
-  background-color: rebeccapurple;
+  /* background-color: rebeccapurple; */
   position: absolute;
   margin-left: 2rem;
   z-index: 50;
+  border-radius: 10px;
 }
 
 .lastImg {
-  height: 170px;
+  height: 275px;
   width: 275px;
   background-color: gold;
   position: absolute;
@@ -168,28 +177,63 @@
   z-index: 8000;
 }
 
-.year-selector23 {
-  margin-left: 5%;
-  margin-bottom: 2%;
-  margin-top: 2%;
-  background: transparent;
-  color: white;
-  font-size: 1.25rem;
-  width: auto;
-  border: none;
-  padding-right: 2px
+/* Animations */
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	20% { opacity: 0; }
+	60% { opacity: 1; }
+	100% { opacity: 1; }
+}
+.fadeInClass {
+	animation-name: fadeIn;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
 }
 
+
 .year-selector24 {
-  margin-left: 5%;
-  margin-bottom: 2%;
-  margin-top: 2%;
-  background: transparent;
-  color: white;
-  font-size: 1.25rem;
-  width: auto;
-  border: none;
-  padding-right: 2px;
+  border: 1px solid #fff;
+  background: #000000;
+  color: #fff;
+  padding: 7px;
+  margin: 2px;
+  border-radius: 4px;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s ease-in-out;
+  width: 70px;
+  height: 50px;
+  margin-right: 35px;
+}
+
+.year-selector24:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(210, 214, 232, 0.767);
+  color: #000000;
+}
+
+.year-selector23 {
+  border: 1px solid #fff;
+  background: #000000;
+  color: #fff;
+  padding: 7px;
+  margin: 2px;
+  border-radius: 4px;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s ease-in-out;
+  width: 70px;
+  height: 50px;
+}
+
+.year-selector23:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(107, 126, 212, 0.767);
+  color: #000000;
 }
 
 @media screen and (max-width: 768px) {
@@ -200,10 +244,13 @@
   .galleryContainer {
     margin-top: 7rem;
     margin-left: 1rem;
-    overflow-x: scroll;
+    overflow-x: hidden;
   }
   .tempNav {
    overflow-x: hidden;
+  }
+  .midImg {
+    margin-left: 0;
   }
 
 }
@@ -214,3 +261,115 @@
   }
 }
  */
+
+
+
+ /* Modal CSS */
+ /* gallery.css */
+
+/* Styles for modal */
+.image-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  z-index: 10000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* margin-left: 1.7rem;
+  margin-top: 20px; */
+  /* width: 90%;
+  height: 85vh; */
+  gap: 3px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  color: black;
+  overflow-x: scroll;
+}
+
+.one{
+  /* background-color: red; */
+  padding: 5px;
+  height: 300px;
+  width: 300px;
+  border: 2px solid black;
+  margin: auto;
+}
+
+.close {
+  /* position: absolute;
+  top: 0%;
+  right: 0;
+  margin: 1.5rem;
+  padding: 5px;
+  background-color: black;
+  color: azure;
+  border-radius: 10px; */
+  
+
+  width: 35px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+
+/* responsivness */
+
+@media only screen and (max-width: 768px) {
+  /* Styles */
+  .first-row {
+    flex-direction: column;
+  }
+  .second-row {
+    flex-direction: column;
+  }
+  .galleryContainer {
+    width: 450px;
+    overflow: hidden;
+    margin-top: 1rem;
+  }
+  .tempNav {
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .first-row,
+  .second-row {
+    flex-direction: column;
+  }
+  .galleryContainer {
+    width: 100%; /* Adjust width to fill available space */
+    overflow: hidden;
+    margin-top: 1rem;
+  }
+  .firstImg {
+    width: 100%; /* Adjust image width to fill container */
+    overflow: hidden;
+  }
+  #card-container {
+    width: 480px;
+  }
+}
+
+@media only screen and (min-width: 789px) and (max-width: 1024px) {
+  .galleryContainer {
+    margin-top: 7rem;
+  }
+  .year-selector {
+    margin-top: 7rem;
+  }
+  .tempNav {
+    margin-top: 3rem;
+  }
+}
