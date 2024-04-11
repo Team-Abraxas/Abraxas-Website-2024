@@ -26,7 +26,7 @@ const Navbar = () => {
             setSticky(window.scrollY > 200)
         }
         window.addEventListener('scroll', handleScroll)
-        return () => {window.removeEventListener('scroll', handleScroll)}
+        return () => { window.removeEventListener('scroll', handleScroll) }
     })
     return (
         <div className={`${sticky ? 'sticky' : ''} main-container`}>
@@ -36,7 +36,7 @@ const Navbar = () => {
                 </div>
                 <img src={MenuIcon} alt="Menu Icon" width={35} className='menuIcon' onClick={() => handleShow()} />
                 <div className='desktopNavbar'>
-                <img src={MenuCross} alt="Menu Cross" width={50} className='menuCross' onClick={() => handleHide()} />
+                    <img src={MenuCross} alt="Menu Cross" width={50} className='menuCross' onClick={() => handleHide()} />
                     <ul className="list">
                         <li className="listItem"><Link to="/">Home</Link></li>
                         <li className="listItem"><Link to='/about'>About</Link></li>
@@ -47,9 +47,9 @@ const Navbar = () => {
                         <li className="listItem"><Link to='/gallery'>Gallery</Link></li>
                         <li className="listItem"><Link to='/contact'>Contact</Link></li>
                     </ul>
-                    
+
                 </div>
-                
+
             </div>
         </div>
     )
