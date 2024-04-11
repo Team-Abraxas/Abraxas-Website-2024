@@ -1,5 +1,5 @@
 .eventPageTitle {
-    border: 1px solid #a39eeb;
+    /* border: 1px solid #a39eeb; */
     background: #000000;
     color: #fff;
     padding: 7px;
@@ -178,7 +178,7 @@ p {
 }
 
 .evtBtn {
-    border: 1px solid #a39eeb;
+    /* border: 1px solid #a39eeb; */
     background: #000000;
     color: #fff;
     padding: 7px;

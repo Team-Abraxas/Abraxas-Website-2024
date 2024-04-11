@@ -3,7 +3,7 @@ import React from 'react'
 import Navbar from '../Navbar'
 import '../../styles/project/project.css'
 //import Coming from '../coming_soon/Coming'
-import Projectscard from './ProjectsCard'
+import Projectscard from './projectscard'
 // import modalpopup from './modalpopup'
 
 const Projects = () => {
