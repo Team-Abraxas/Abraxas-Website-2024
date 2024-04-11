@@ -66,11 +66,13 @@ p {
 .overlay-content {
     display: flex;
     flex-direction: column;
+    /* background-color: red; */
     justify-content: space-between;
     width: 15vmin;
     height: 100%;
     padding: .5rem 0 0 .5rem;
     border: 3px solid;
+    margin-left: 1rem;
     /* border-image: 
     	linear-gradient(
       	to bottom, 

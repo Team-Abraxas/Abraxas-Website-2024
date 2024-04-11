@@ -83,7 +83,7 @@ const Projectscard = () => {
     <div >
 
       <div className="year-selector">
-        <button className='year-selector24' onClick={handle2024}>2024</button>
+        <button className='year-selector24' style={{ boxShadow: `${isYear === '2024' ? '2px 3px #fff' : 'transparent'}` }} onClick={handle2024}>2024</button>
         <button className='year-selector23' onClick={handle2023}>2023</button>
       </div>
 

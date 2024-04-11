@@ -1,9 +1,8 @@
 import { React, useState } from "react";
 import '../../styles/gallery/gallery.css';
+// import ImageModel from './imageModel';
 
-
-
-function GalleryCard({ identifier, style, width }) {
+function GalleryCard({ identifier, style, width, image1, image2, image3 }) {
 
   function movement1(event) {
     const card = event.currentTarget;
@@ -19,13 +18,17 @@ function GalleryCard({ identifier, style, width }) {
     card.querySelector(".lastImg").classList.remove('child-3');
   }
 
+
+
+
   return (
     <>
-      <div id="card-container" style={{ style, width: `${width}px` }} key={identifier} onMouseEnter={movement1} onMouseLeave={movement2}>
-        <div className="firstImg tr" style={{ width: `${width}px` }}></div>
-        <div className="midImg tr" style={{ width: `${width}px` }}></div>
-        <div className="lastImg tr" style={{ width: `${width}px` }}></div>
+      <div id="card-container" style={{ style, width: `${width}px` }} key={identifier} onMouseEnter={movement1} onMouseLeave={movement2} >
+        <div className="firstImg tr fadeInClass" style={{ width: `${width}px` }}><img src={image1} /></div>
+        <div className="midImg tr" style={{ width: `${width}px` }}><img src={image2} /></div>
+        {/* <div className="lastImg tr" style={{ width: `${width}px` }}><img src={image3} /></div> */}
       </div>
+
     </>
   );
 }

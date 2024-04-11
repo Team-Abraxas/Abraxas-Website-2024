@@ -35,10 +35,10 @@ const Events = () => {
 
                     <div className="wrap animate pop">
                         <div className="overlay">
-                            <div className="overlay-content animate slide-left delay-2">
-                                {/* <h1 className="animate slide-left pop delay-4">Locked In Time</h1> */}
+                            {/* <div className="overlay-content animate slide-left delay-2">
+                                <h1 className="animate slide-left pop delay-4">Physics Carnival</h1>
                                 <p className="animate slide-left pop delay-5" style={myStyle}></p>
-                            </div>
+                            </div> */}
                             <div className="image-content1 animate slide delay-5"></div>
                             {/* <div className="dotsEvent animate">
 								<div className="dotEvent animate slide-up delay-6"></div>
@@ -55,9 +55,9 @@ const Events = () => {
                     </div>
                     <div className="wrap animate pop">
                         <div className="overlay">
-                            <div className="overlay-content animate slide-left delay-2">
-                                {/* <h1 className="animate slide-left pop delay-4">Photon Quest</h1> */}
-                            </div>
+                            {/* <div className="overlay-content animate slide-left delay-2">
+                                <h1 className="animate slide-left pop delay-4">Escape Room</h1>
+                            </div> */}
                             <div className="image-content2 animate slide delay-5"></div>
                             {/* <div className="dotsEvent animate">
 								<div className="dotEvent animate slide-up delay-6"></div>
@@ -78,7 +78,7 @@ const Events = () => {
                     <><div className="wrap animate pop">
                         <div className="overlay">
                             <div className="overlay-content animate slide-left delay-2">
-                                {/* <h1 className="animate slide-left pop delay-4">Telescope</h1> */}
+                                {/* <h1 className="animate slide-left pop delay-4">Print Hub</h1> */}
 
                             </div>
                             <div className="image-content3 animate slide delay-5"></div>
@@ -108,7 +108,7 @@ const Events = () => {
                         <div className="wrap animate pop">
                             <div className="overlay">
                                 <div className="overlay-content animate slide-left delay-2">
-                                    {/* <h1 className="animate slide-left pop delay-4">Quantum Computing</h1> */}
+                                    {/* <h1 className="animate slide-left pop delay-4">Guest Lecture by Influencer and educator Rajan Chopra</h1> */}
 
                                 </div>
                                 <div className="image-content4 animate slide delay-5"></div>
