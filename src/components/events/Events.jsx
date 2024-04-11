@@ -5,9 +5,6 @@ import { useState } from 'react';
 
 
 const Events = () => {
-    // const lockedInTime = "../../assets/images/events/lockedInTime.webp";
-    // const teleScope ="../../assets/images/events/telescope.webp";
-
     const [isEvent, setEvent] = useState("workshop");
     const myStyle = { color: "white", marginBottom: "2.5rem" };
 
@@ -21,7 +18,6 @@ const Events = () => {
         setEvent("workshop");
         document.getElementsByClassName("eventPageTitle")[0].style.boxShadow = "2px 3px #fff";
         document.getElementsByClassName("evtBtn")[0].style.boxShadow = "0px 0px";
-
     }
 
     return (
