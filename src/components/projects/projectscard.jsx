@@ -3,7 +3,7 @@ import RoverCanvas from '../about/Rover'
 import "../../styles/project/projectscard.css"
 import { motion } from 'framer-motion';
 import { useRef, useEffect, useState } from 'react';
-import Modal from './ModalPopup';
+import Modal from './modalpopup';
 import Cyclorotormodel from '../../assets/images/project/cyclorotor';
 import Ionicthruster from '../../assets/images/project/ionicthruster';
 import LeveragingLight from '../../assets/images/project/LeveragingLight';
@@ -11,6 +11,8 @@ import TELESCOPE from '../../assets/images/project/Telescope';
 import Soniclevitation from '../../assets/images/project/Soniclevitation';
 import Quantumwalker from '../../assets/images/project/Quantumwalker';
 import IonicWind from '../../assets/images/project/ionicwind';
+import Ramjet from '../../assets/images/project/Ramjet';
+import RadioTelescope from '../../assets/images/project/Radiotelescope';
 
 const Projectscard = () => {
   const [width, setWidth] = useState(0)
@@ -157,7 +159,7 @@ const data2023 = [
   },
   {
     name: `Ramjet Engine`,
-    image: <Soniclevitation />,
+    image: <Ramjet />,
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ratione ab ea accusamus architecto ducimus quo doloremque aliquid reprehenderit quasi sunt iste rem itaque repellendus, qui amet quae, dignissimos aliquam?`,
     descriptions: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nulla animi quibusdam ducimus consequuntur mollitia totam officiis atque. Totam cum eveniet minima quo. Tempore ratione, quam impedit doloribus reprehenderit enim!Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nulla animi quibusdam ducimus consequuntur mollitia totam officiis atque. Totam cum eveniet minima quo. Tempore ratione, quam impedit doloribus reprehenderit enim!Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nulla animi quibusdam ducimus consequuntur mollitia totam officiis atque. Totam cum eveniet minima quo. Tempore ratione, quam impedit doloribus reprehenderit enim!Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nulla animi quibusdam ducimus consequuntur mollitia totam officiis atque. Totam cum eveniet minima quo. Tempore ratione, quam impedit doloribus reprehenderit enim!Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nulla animi quibusdam ducimus consequuntur mollitia totam officiis atque. Totam cum eveniet minima quo. Tempore ratione, quam impedit doloribus reprehenderit enim!`
   },
@@ -235,7 +237,7 @@ const data2024 = [
   // },
   {
     name: `Radio Telescope`,
-    image: `/Ion-Thruster-Full-Diagram.jpg`,
+    image: <RadioTelescope />,
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ratione ab ea accusamus architecto ducimus quo doloremque aliquid reprehenderit quasi sunt iste rem itaque repellendus, qui amet quae, dignissimos aliquam?`,
     descriptions: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nulla animi quibusdam ducimus consequuntur mollitia totam officiis atque. Totam cum eveniet minima quo. Tempore ratione, quam impedit doloribus reprehenderit enim!Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nulla animi quibusdam ducimus consequuntur mollitia totam officiis atque. Totam cum eveniet minima quo. Tempore ratione, quam impedit doloribus reprehenderit enim!Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nulla animi quibusdam ducimus consequuntur mollitia totam officiis atque. Totam cum eveniet minima quo. Tempore ratione, quam impedit doloribus reprehenderit enim!Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nulla animi quibusdam ducimus consequuntur mollitia totam officiis atque. Totam cum eveniet minima quo. Tempore ratione, quam impedit doloribus reprehenderit enim!Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nulla animi quibusdam ducimus consequuntur mollitia totam officiis atque. Totam cum eveniet minima quo. Tempore ratione, quam impedit doloribus reprehenderit enim!`
   },
