@@ -9,6 +9,7 @@ function Teams() {
             <Navbar />
             <div className="teamHeroContainer">
                 <Carousel year={0} />
+                <Carousel year={4} />
                 <Carousel year={3} />
                 <Carousel year={2} />
                 <Carousel year={1} />

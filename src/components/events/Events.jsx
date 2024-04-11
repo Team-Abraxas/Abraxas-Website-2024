@@ -47,10 +47,10 @@ const Events = () => {
 							</div> */}
                         </div>
                         <div className="eventText">
-                            <p>An escape room is a physical adventure game in which players are locked in a room
-                                and must solve a series of puzzles and challenges in order to escape within a set
-                                time limit. These challenges can range from deciphering codes and puzzles to
-                                manipulating objects and finding hidden clues.</p>
+                            <p>Team Abraxas proudly hosted the Physics Carnival, a vibrant event where we brought physics to life through interactive projects and games. Attendees immersed themselves in the wonders of science, exploring concepts like quantum tunneling analogues and infinite mirrors in engaging and entertaining ways. From hands-on demonstrations to thought-provoking activities, the Physics Carnival sparked curiosity and excitement about the world of physics. Enthusiasts enjoyed the opportunity to discover, learn, and have fun while delving into the fascinating realm of science. It was just one of the exhilarating events that blend education with entertainment from Team Abraxas!
+
+
+                            </p>
                         </div>
                     </div>
                     <div className="wrap animate pop">
@@ -66,10 +66,10 @@ const Events = () => {
 							</div> */}
                         </div>
                         <div className="eventText">
-                            <p>A laser dart game typically involves players decoding the given riddle and then aim at
-                                the appropriate dart using laser to shoot at the target board. Here in this game the
-                                laser will be mounted and the player will have to use his/her physics aptitude to
-                                arrange the mirror and reach the final aim.</p>
+                            <p>On April 11th, we're thrilled to present our exhilarating event, the Escape Room. Participants will embark on an adventure filled with physics-based puzzles and clues, testing their wit and creativity to escape within the allotted time. As they navigate through the challenges, they'll encounter mind-bending concepts and engage in thrilling problem-solving. The ultimate victor will claim fantastic prizes, rewarding their mastery of physics and puzzle-solving skills. Join us for an unforgettable experience that combines fun, learning, and friendly competition. Get ready to unlock the mysteries and emerge victorious in our Escape Room!
+
+
+                            </p>
                         </div>
                     </div>
                 </>
@@ -89,20 +89,9 @@ const Events = () => {
 							</div> */}
                         </div>
                         <div className="eventText">
-                            <p>This workshop will provide a comprehensive introduction
-                                to telescopes and astrophotography, designed to give participants a solid
-                                foundation in the basics of observational astronomy. Participants will
-                                learn about the different types of telescopes, their features, and how to
-                                set them up for optimal viewing. They will also be introduced to the basics
-                                of astrophotography, including how to take images of the night sky using
-                                a telescope, and how to process those images using popular software
-                                tools. Additionally, the workshop will cover the fundamentals of
-                                observational astronomy, including the different types of celestial objects
-                                that can be observed, how to locate them in the night sky, and how to
-                                interpret their properties. Whether you are a complete beginner or an
-                                experienced observer, this workshop will provide you with the skills and
-                                knowledge needed to explore the wonders of the universe with
-                                confidence. </p>
+                            <p>
+                                The team abraxas conducted a workshop on its handcrafted 3d printer on 13th of February.This  workshop delved into the intricacies of its machinery and software, enlightening participants on its operational mechanics. Attendees gained insights into the diverse applications and functionalities of 3D printing technology. From understanding the nuances of various printing materials to mastering the utilization of specialized software for coding designs, the workshop provided a comprehensive overview. Participants explored the transformative potential of 3D printing across industries, fostering innovative thinking and practical skills. Through hands-on demonstrations and engaging discussions, the workshop empowered individuals to harness the power of this cutting-edge technology for creative expression and problem-solving.
+                            </p>
                         </div>
                     </div>
                         <div className="wrap animate pop">
@@ -119,17 +108,10 @@ const Events = () => {
 								</div> */}
                             </div>
                             <div className="eventText">
-                                <p> Quantum computing is a rapidly-emerging technology that
-                                    harnesses the laws of quantum mechanics to solve problems too complex
-                                    for classical computers. Quantum computing has the potential to change the
-                                    world, and we want to make sure you are prepared. Quantum computers will
-                                    soon cure cancer and global warming by trying all possible answers in
-                                    parallel universes. While every developing nation invests in the development
-                                    of quantum computers, we require young students to join the group, explore
-                                    this field, and shape the future of this technology. This workshop will give
-                                    participants an introduction to the field of quantum computing, covering
-                                    topics on quantum mechanics, quantum information and computation, and
-                                    quantum hardware.</p>
+                                <p> Team Abraxas had the privilege of hosting a captivating guest lecture by renowned Instagram influencer Mr. Rajan Chopra on April 5th. With over 400k followers, Mr. Chopra shared profound insights on the intersection of quantum physics and everyday life, enriching our understanding of both realms. His engaging discourse not only delved into complex physics concepts but also offered invaluable life wisdom. Attendees were inspired by his unique perspective, leaving with a deeper appreciation for the mysteries of the universe and practical insights for personal growth. This event marks the start of more exciting discussions and learning opportunities with Team Abraxas.
+
+
+                                </p>
                             </div>
                         </div>
                     </>}
