@@ -54,7 +54,7 @@ const Gallery = () => {
                 <button className='year-selector23' onClick={handle2023}>2023</button>
             </div>
 
-            <motion.div className="galleryContainer snaps-inline" ref={galleryContainerRef} drag="x" dragConstraints={{ right: 0, left: -width }}>
+            <motion.div className="galleryContainer snaps-inline" ref={galleryContainerRef} drag="x" dragConstraints={isYear === '2024' ? { right: 0, left: -width } : { right: 0, left: -3500 }}>
                 {isYear !== "2023" ? <>
                     <div className="first-row">
                         <GalleryCard identifier={1} width={"400"} image1="https://res.cloudinary.com/dyq1mioyr/image/upload/v1712791111/ABRAXAS-Gallery24/ooc5jgmm8myaieky4pbt.jpg" image2="https://res.cloudinary.com/dyq1mioyr/image/upload/v1712791095/ABRAXAS-Gallery24/wamjxelybf8wcyl6dico.jpg" />

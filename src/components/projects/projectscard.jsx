@@ -3,7 +3,7 @@ import RoverCanvas from '../about/Rover'
 import "../../styles/project/projectscard.css"
 import { motion } from 'framer-motion';
 import { useRef, useEffect, useState } from 'react';
-import Modal from './modalpopup';
+import Modal from './ModalPopup';
 import Cyclorotormodel from '../../assets/images/project/cyclorotor';
 import Ionicthruster from '../../assets/images/project/ionicthruster';
 import LeveragingLight from '../../assets/images/project/LeveragingLight';
@@ -90,8 +90,8 @@ const Projectscard = () => {
       </div>
 
       {isYear == "2023" ? <>
-        <motion.div ref={carousel} className='projectcard' whileTap={{ cursor: 'scrolling' }}>
-          <motion.div drag='x' dragConstraints={isMobile ? { right: 0, left: -2800 } : { right: 0, left: -1900 }} className='innerprojectcard'>
+        <motion.div ref={carousel} className='projectcard' whileTap={{ cursor: 'grabbing' }}>
+          <motion.div drag='x' dragConstraints={isMobile ? { right: 0, left: -2800 } : { right: 0, left: -width }} className='innerprojectcard'>
             {data2023.map((d, index) => {
               return (
                 <motion.div className='projectdetail' key={index}>
@@ -208,7 +208,7 @@ const data2024 = [
   },
   {
     name: `QRNG`,
-    image: <img src="https://res.cloudinary.com/dyq1mioyr/image/upload/v1712835814/Batch2024/images_djnjn3.jpg" style={{ borderRadius: '10px' }} />,
+    image: <img src="https://res.cloudinary.com/dyq1mioyr/image/upload/v1712835814/Batch2024/images_djnjn3.jpg" style={{ borderRadius: '10px', height: '220px' }} />,
     description: `Quantum Binary Number Generator: Revolutionizing security with quantum mechanics. Join us in bridging theory with implementation, unlocking new frontiers in computational unpredictability and cryptographic security.`,
     descriptions: `This project pioneers quantum mechanics principles in the development of a Binary Number Generator to redefine random number generation. Exploiting quantum superposition, it aims to surpass classical pseudorandom number generators, ensuring genuinely random outputs. Using quantum bits (qubits) and their simultaneous state existence, it introduces unparalleled unpredictability. The focus is on creating a robust system for cryptography, secure communications, and Quantum Key Distribution (QKD) systems, ensuring unbreakable cryptographic security. Managing quantum noise is crucial for reliability and quality. The goal is to build a prototype integrating quantum mechanics theory with practical implementation. Beyond cryptography, it promises to advance quantum computing and understanding of quantum principles. This initiative represents a significant leap towards realizing quantum-powered randomness, unlocking new frontiers in secure communication and computational unpredictability.`
   },
@@ -221,7 +221,7 @@ const data2024 = [
 
   {
     name: `Plant Disease Detector`,
-    image: <img src="https://res.cloudinary.com/dyq1mioyr/image/upload/v1712836309/Batch2024/images_eilvlr.jpg" style={{ borderRadius: '10px', marginTop: '1rem' }} />,
+    image: <img src="https://res.cloudinary.com/dyq1mioyr/image/upload/v1712836309/Batch2024/images_eilvlr.jpg" style={{ borderRadius: '10px', height: '220px' }} />,
     description: `Revolutionizing farming, our tool utilizes machine learning and Python to swiftly identify plant diseases, ensuring healthier yields and sustainable agriculture. Experience the future of crop management with our innovative solution.`,
     descriptions: `Our plant disease detector harnesses the power of machine learning, Python, and image recognition to swiftly identify diseases in plant leaves. This innovative tool aids farmers in early intervention and crop protection, promoting sustainable farming practices by reducing pesticide usage and improving yield quality. Empowering farmers with real-time, accurate diagnoses, it revolutionizes crop management, fostering healthier harvests and economic stability. Seamlessly integrating into existing workflows, our solution represents a pivotal advancement in agricultural technology, bridging the gap between traditional farming and the digital era. Join us in shaping the future of agriculture with cutting-edge innovation and sustainable practices.`
   },
