@@ -3,7 +3,7 @@ import RoverCanvas from '../about/Rover'
 import "../../styles/project/projectscard.css"
 import { motion } from 'framer-motion';
 import { useRef, useEffect, useState } from 'react';
-import Modal from './ModalPopup';
+import Modal from './modalpopup';
 import Cyclorotormodel from '../../assets/images/project/cyclorotor';
 import Ionicthruster from '../../assets/images/project/ionicthruster';
 import LeveragingLight from '../../assets/images/project/LeveragingLight';
