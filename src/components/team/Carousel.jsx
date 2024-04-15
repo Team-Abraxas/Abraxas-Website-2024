@@ -23,7 +23,7 @@ const Carousel = (props) => {
         YearTitle = "Volunteers";
     } else if (year === 0) {
         Members = CC;
-        YearTitle = "Core Co-ordinators"
+        YearTitle = "Club Co-ordinators"
     } else if (year === 4) {
         Members = FinalYearMember;
         YearTitle = "Final Year"
